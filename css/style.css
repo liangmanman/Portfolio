@@ -1,0 +1,158 @@
+
+ 
+html,
+body {
+        height: 100%;
+    }
+
+    /* Page-header */
+    .page-header {
+    padding-bottom: 9px;
+    margin: 20px 0px 20px;
+    border-bottom: 1px solid #eee;
+    }
+
+    /* Home Page Carousel */
+    header.carousel {
+        width: 90%;
+        height: 80%;
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    header.carousel .item,
+    header.carousel .item.active,
+    header.carousel .carousel-inner {
+        height: 100%;
+    }
+
+    img {
+        width: 100%;
+        height: 100%;
+    }
+
+    header.carousel .img,
+    header.carousel .item.active,
+    header.carousel .carousel-inner {
+        text-align: -webkit-center;
+    }
+
+
+    .carousel-caption {
+        color: midnightblue;
+    }
+
+    .carousel-indicators .active {
+        background-color: midnightblue;
+    }
+
+    .carousel-indicators li {
+        border: 1px solid midnightblue; ;
+
+    }
+
+    .img-responsive, 
+    .thumbnail > img, 
+    .thumbnail a > img, 
+    .carousel-inner > 
+    .item > img, 
+    .carousel-inner > 
+    .item > a > img {
+        display: block;
+        max-width: 100%;
+        height: 100%;
+    }
+
+    /* Responsive Styles */
+
+    @media(max-width:991px) {
+        .customer-img,
+        .img-related {
+            margin-bottom: 30px;
+        }
+    }
+
+    @media(max-width:767px) {
+        .img-portfolio {
+            margin-bottom: 15px;
+        }
+        header.carousel .carousel {
+            height: 70%;
+        }
+    }
+
+    
+
+    /* Footer Styles */
+
+    footer {
+        margin: 50px 0;
+    }
+
+    .img-portfolio {
+        margin-bottom: 30px;
+    }
+
+    .img-hover:hover {
+        opacity: 0.8;
+    }
+
+    .row {
+        margin-bottom: 20px;
+    }
+
+    /* Footer Styles */
+
+    footer {
+        margin: 50px 0;
+    }
+
+
+h4 {
+    margin: 20px 10px 10px;
+}
+
+
+p {
+    margin: 10px;
+}
+
+#carousel-example-generic {
+    margin: 20px auto;
+    width: 400px;
+}
+
+#carousel-custom {
+    margin: 20px auto;
+    width: 80%
+}
+#carousel-custom .carousel-indicators {
+    margin: 10px 0 0;
+    overflow: auto;
+    position: static;
+    text-align: left;
+    white-space: nowrap;
+    width: 100%;
+}
+#carousel-custom .carousel-indicators li {
+    background-color: transparent;
+    -webkit-border-radius: 0;
+    border-radius: 0;
+    display: inline-block;
+    height: auto;
+    margin: 0 !important;
+    width: auto;
+}
+#carousel-custom .carousel-indicators li img {
+    display: block;
+    opacity: 0.5;
+}
+#carousel-custom .carousel-indicators li.active img {
+    opacity: 1;
+}
+#carousel-custom .carousel-indicators li:hover img {
+    opacity: 0.75;
+}
+#carousel-custom .carousel-outer {
+    position: relative;
+}
