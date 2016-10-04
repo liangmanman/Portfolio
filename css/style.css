@@ -39,15 +39,15 @@ body {
 
 
     .carousel-caption {
-        color: midnightblue;
+        color: inherit;
     }
 
     .carousel-indicators .active {
-        background-color: midnightblue;
+        background-color: #283747;
     }
 
     .carousel-indicators li {
-        border: 1px solid midnightblue; ;
+        border: 1px solid #283747;
 
     }
 
