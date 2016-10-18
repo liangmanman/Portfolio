@@ -3,6 +3,7 @@
 html,
 body {
         height: 100%;
+        font-family: 'Roboto Slab', serif;
     }
 
     /* Page-header */
@@ -15,7 +16,6 @@ body {
     /* Home Page Carousel */
     header.carousel {
         width: 90%;
-        height: 80%;
         margin-right: auto;
         margin-left: auto;
     }
@@ -29,6 +29,18 @@ body {
     img {
         width: 100%;
         height: 100%;
+        display: block; 
+        margin-left: auto; 
+        margin-right: auto;
+    }
+
+/*here for specific prject three slides img*/
+    #over img{
+    max-height: 500px;
+    max-width: 500px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
     }
 
     header.carousel .img,
@@ -139,20 +151,94 @@ p {
     -webkit-border-radius: 0;
     border-radius: 0;
     display: inline-block;
-    height: auto;
+    height: 50px;
     margin: 0 !important;
-    width: auto;
+    width: 100px;
 }
+
 #carousel-custom .carousel-indicators li img {
     display: block;
-    opacity: 0.5;
+    opacity: 0.4;
 }
 #carousel-custom .carousel-indicators li.active img {
-    opacity: 1;
+    opacity: 0.7;
 }
 #carousel-custom .carousel-indicators li:hover img {
-    opacity: 0.75;
+    opacity: 1;
 }
 #carousel-custom .carousel-outer {
     position: relative;
 }
+
+/*here for code section scroll */
+div.scroll {
+    width: 100%;
+    height: 540px;
+    overflow: scroll;
+}
+
+
+/*here for drop down button*/
+.dropbtn {
+    background-color: #222;
+    border-color: #080808;
+    color: #9d9d9d;
+    padding: 16px;
+    font-size: 14px;
+    border: none;
+    cursor: pointer;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    width: 15rem;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 6px 18px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover .dropbtn {
+    color: white;
+}
+
+
+
+.hockHide {
+    display: initial;
+    cursor: pointer;
+}
+
+.hock {
+    display: inline-block;
+}
+
+.hockShow {
+    display: -webkit-inline-box;
+}
+
+.hock:hover .hockShow {
+    display: initial;
+    cursor: pointer;
+}
+
+.hock:hover .hockHide {
+    display: -webkit-inline-box;
+}
+
