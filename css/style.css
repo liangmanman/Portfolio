@@ -34,6 +34,36 @@ body {
         margin-right: auto;
     }
 
+nav.navbar-fixed-top {
+    background-color: #2C333C;
+}
+
+div.navbar-header {
+    position: absolute;
+}
+
+div.navbar-header  a{
+    color: #B6BBC5;
+}
+
+div.navbar-header:hover a{
+    color: white;
+}
+
+.navbar-nav > li {
+    float: left;
+    color: #B6BBC5;
+}
+
+.navbar-nav > li > a:hover{
+    color: white;
+    background-color: #2C333C;
+}
+
+div.myContainer {
+    position: relative;
+}
+
 /*here for specific prject three slides img*/
     #over img{
     max-height: 500px;
@@ -179,10 +209,10 @@ div.scroll {
 
 
 /*here for drop down button*/
-.dropbtn {
-    background-color: #222;
+button.dropbtn {
+    background-color: #2C333C;
     border-color: #080808;
-    color: #9d9d9d;
+    color: #B6BBC5;
     padding: 16px;
     font-size: 14px;
     border: none;
@@ -197,8 +227,9 @@ div.scroll {
 .dropdown-content {
     display: none;
     position: absolute;
-    width: 15rem;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    width: 12rem;
+    background-color: black;
+    border-radius: .5rem;
 }
 
 .dropdown-content a {
@@ -206,12 +237,18 @@ div.scroll {
     padding: 6px 18px;
     text-decoration: none;
     display: block;
+    color: #B6BBC5;
 }
 
-.dropdown-content a:hover {background-color: #f1f1f1}
+.dropdown-content a:hover {
+    background-color: #2C333C;
+    color: white;
+}
 
 .dropdown:hover .dropdown-content {
     display: block;
+    position: absolute;
+    background-color: #2C333C;
 }
 
 .dropdown:hover .dropbtn {
@@ -241,4 +278,361 @@ div.scroll {
 .hock:hover .hockHide {
     display: -webkit-inline-box;
 }
+
+
+
+/*here for animation flip*/
+/* entire container, keeps perspective */
+.flip-container {
+    perspective: 1000px;
+}
+    /* flip the pane when hovered */
+    .flip-container:hover .flipper, .flip-container.hover .flipper {
+        transform: rotateY(180deg);
+    }
+
+.flip-container, .front, .back {
+    width: 320px;
+    height: 480px;
+}
+
+/* flip speed goes here */
+.flipper {
+    transition: 0.6s;
+    transform-style: preserve-3d;
+
+    position: relative;
+}
+
+/* hide back of pane during swap */
+.front, .back {
+    backface-visibility: hidden;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+/* front pane, placed above back */
+.front {
+    z-index: 2;
+    /* for firefox 31 */
+    transform: rotateY(0deg);
+}
+
+/* back, initially hidden pane */
+.back {
+    transform: rotateY(180deg);
+}
+
+
+
+
+
+/*here for animation flip for button in index*/
+/* entire container, keeps perspective */
+.buttonFlip-container {
+    perspective: 100rem;
+}
+
+.buttonFlip-containerLeft {
+    perspective: 100rem;
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.buttonFlip-containerRight {
+    perspective: 100rem;
+    display: table-cell;
+    vertical-align: middle;
+}
+
+header.carousel {
+    position: relative;
+}
+
+header.carousel div.buttonFlip-containerLeft {
+   margin: 0;
+   position: absolute;               
+   top: 50%;                         
+   transform: translate(0, -50%);
+   left:5%;
+
+} 
+
+header.carousel div.buttonFlip-containerRight {
+   margin: 0;
+   position: absolute;               
+   top: 50%;                         
+   transform: translate(0, -50%);
+   right: 5%;
+} 
+
+div.carousel div.buttonFlip-containerLeft {
+   margin: 0;
+   position: absolute;               
+   top: 50%;                         
+   transform: translate(0, -50%);
+
+} 
+
+div.carousel div.buttonFlip-containerRight {
+   margin: 0;
+   position: absolute;               
+   top: 50%;                         
+   transform: translate(0, -50%);
+   right: 0%;
+} 
+
+
+
+    /* flip the pane when hovered */
+    .buttonFlip-containerLeft:hover .flipperButton, .buttonFlip-containerLeft.hover .flipperButton {
+        transform: rotateX(180deg);
+    }
+
+.buttonFlip-containerLeft, .frontButton, .backButton {
+    width: 4rem;
+    height: 3rem;
+}
+
+    /* flip the pane when hovered */
+    .buttonFlip-containerRight:hover .flipperButton, .buttonFlip-containerRight.hover .flipperButton {
+        transform: rotateX(180deg);
+    }
+
+.buttonFlip-containerRight, .frontButton, .backButton {
+    width: 4rem;
+    height: 3rem;
+}
+
+
+    /* flip the pane when hovered */
+    .buttonFlip-container:hover .flipperButton, .buttonFlip-container.hover .flipperButton {
+        transform: rotateX(180deg);
+    }
+
+.buttonFlip-container, .frontButton, .backButton {
+    width: 12rem;
+    height: 3rem;
+}
+
+
+/* flip speed goes here */
+.flipperButton {
+    transition: .5s;
+    transform-style: preserve-3d;
+
+    position: relative;
+}
+
+/* hide back of pane during swap */
+.frontButton, .backButton {
+    backface-visibility: hidden;
+
+    position: inherit;
+    top: 0;
+    left: 0;
+}
+
+/* front pane, placed above back */
+.frontButton {
+    z-index: 0;
+    /* for firefox 31 */
+    transform: rotateX(0deg);
+}
+
+/* back, initially hidden pane */
+.backButton {
+    transform: rotateX(180deg);
+}
+
+/*flip button in index*/
+
+a {
+    color: inherit;
+}
+
+a:hover{
+    text-decoration: none;
+    color: initial;
+}
+
+.mybutton {
+    width: 12rem;
+    height: 3.5rem;
+    border-radius: 2px;
+    border: none;
+    font-size: 16px;
+    text-decoration: none; 
+    text-align: center;
+    display: table-cell;
+    vertical-align:middle;
+}
+
+.mybutton2 {
+    width: 4rem;
+    height: 3rem;
+    border-radius: 2px;
+    border: none;
+    font-size: 16px;
+    text-decoration: none; 
+    text-align: center;
+    display: table-cell;
+    vertical-align:middle;
+}
+
+.mybutton3 {
+    width: 4rem;
+    height: 3rem;
+    border-radius: 2px;
+    border: none;
+    font-size: 16px;
+    text-decoration: none; 
+    text-align: center;
+    display: table-cell;
+    vertical-align:middle;
+}
+
+.button1 {
+    background-color: #4d4d4c;
+    color: white;
+}
+
+.button2 {
+    background-color: white;
+    /*background-color: #ededed;*/
+    color: #4d4d4c;
+}
+
+
+
+/*here for animation flip*/
+/* entire container, keeps perspective */
+.flipEach-container {
+    perspective: 1000px;
+}
+    /* flip the pane when hovered */
+    .flipEach-container:hover .flipperEach, .flipEach-container.hover .flipperEach {
+        transition: opacity(100%);
+        transform: rotateY(180deg);
+    }
+
+.flipEach-container, .frontEach, .backEach {
+    width: 250px;
+    height: 126px;
+}
+
+/* flip speed goes here */
+.flipperEach {
+    transition: 0.3s;
+    transform-style: preserve-3d;
+
+    position: relative;
+}
+
+/* hide back of pane during swap */
+.frontEach, .backEach  {
+    backface-visibility: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+/* front pane, placed above back */
+.frontEach {
+    z-index: 2;
+    /* for firefox 31 */
+    transform: rotateY(0deg);
+}
+
+/* back, initially hidden pane */
+.backEach {
+    transform: rotateY(180deg);
+    position: relative;
+}
+
+
+
+
+
+/*here for animation flip*/
+/* entire container, keeps perspective */
+.ShowMeContainer {
+    perspective: 1000px;
+}
+    /* flip the pane when hovered */
+    .ShowMeContainer:hover .flipperMe, .ShowMeContainer.hover .flipperMe {
+        transition: opacity(100%);
+    }
+
+.ShowMeContainer, .frontMe, .backMe {
+    width: 50px;
+    height: 50px;
+}
+
+/* flip speed goes here */
+.flipperMe {
+    transition: 0.3s;
+    transform-style: preserve-3d;
+
+    position: relative;
+}
+
+/* hide back of pane during swap */
+.frontMe, .backMe  {
+    backface-visibility: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+/* front pane, placed above back */
+.frontMe {
+    z-index: 2;
+    /* for firefox 31 */
+    transition: tranform
+}
+
+/* back, initially hidden pane */
+.backMe {
+    transition: opacity(100%);
+    position: relative;
+}
+
+
+.HoverShow {
+    background-color: black;
+    color: white;
+    width: 17rem;
+    height: 8rem;
+    border-radius: 1rem;
+    opacity: 0;
+    transition: opacity .5s;
+}
+
+.HoverShow:hover {
+    opacity: 100;
+}
+
+div.col-xs-6 {
+    position: relative;
+}
+
+div.col-xs-6 .HoverShow{
+    position: absolute;               
+    top: 50%;                         
+    transform: translate(0, -50%);
+    left: 40%;
+}
+
+div.col-xs-6 table.no-spacing{
+    position: relative;
+}
+
+
+
+
+
+
 

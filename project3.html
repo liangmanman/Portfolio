@@ -65,9 +65,9 @@ This is a invisible place for better viewing, please ignore
                     <div class="dropdown">
                       <button class="dropbtn">Projects<b class="caret"></b></button>
                       <div class="dropdown-content">
-                      <a href="index.html#Project 1">Project 1</a>
-                      <a href="index.html#Project 2">Project 2</a>
-                      <a href="index.html#Project 3">Project 3</a>
+                      <a href="project1.html">Project 1</a>
+                      <a href="project2.html">Project 2</a>
+                      <a href="project3.html">Project 3</a>
                       <!--
                       <a href="index.html#Project 4">Project 4</a>
                       <a href="index.html#Project 5">Project 5</a>
@@ -76,13 +76,13 @@ This is a invisible place for better viewing, please ignore
                     </div>
                     </li>
                     <li class="page-scroll">
-                        <a href="index.html#About">About</a>
+                        <a href="About.html">About</a>
                     </li>
                     <li>
                     <div class="dropdown">
                       <button class="dropbtn">Other Pages<b class="caret"></b></button>
                       <div class="dropdown-content">
-                        <a href="...">Keep Editing</a>
+                        <a href="index.html">Keep Editing</a>
                       </div>
                     </div>
                     </li>
@@ -128,14 +128,6 @@ This is a invisible place for better viewing, please ignore
                 <img src='resources/project3/project3-7.png' alt='' />
             </div>
         </div>
-            
-        <!-- Controls -->
-        <a class='left carousel-control' href='#carousel-custom' data-slide='prev'>
-            <span class='glyphicon glyphicon-chevron-left'></span>
-        </a>
-        <a class='right carousel-control' href='#carousel-custom' data-slide='next'>
-            <span class='glyphicon glyphicon-chevron-right'></span>
-        </a>
     </div>
     
     <!-- Indicators -->
@@ -156,6 +148,40 @@ This is a invisible place for better viewing, please ignore
         <li data-target='#carousel-custom' data-slide-to='6'>
         <img style="max-height: 50px; max-width: 50px; display: block; margin-left: auto; margin-right: auto;" src='resources/project3/project3-7.png' alt=''/></li>
     </ol>
+
+            <!-- Controls -->
+        <div class="buttonFlip-containerLeft" ontouchstart="this.classList.toggle('hover');">
+            <div class="flipperButton">
+                <div class="frontButton">
+                    <!-- front content -->
+                    <a class="left mybutton2 button1">
+                        <span class="glyphicon glyphicon-chevron-left"></span>
+                    </a>
+                </div>
+                <div class="backButton">
+                    <!-- back content -->
+                    <a class="right mybutton2 button2" href="#carousel-custom" data-slide="prev">
+                        <span class="glyphicon glyphicon-chevron-left"></span>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="buttonFlip-containerRight" ontouchstart="this.classList.toggle('hover');">
+            <div class="flipperButton">
+                <div class="frontButton">
+                    <!-- front content -->
+                    <a class="left mybutton3 button1">
+                        <span class="glyphicon glyphicon-chevron-right"></span>
+                    </a>
+                </div>
+                <div class="backButton">
+                    <!-- back content -->
+                    <a class="right mybutton3 button2" href="#carousel-custom" data-slide="next">
+                        <span class="glyphicon glyphicon-chevron-right"></span>
+                    </a>
+                </div>
+            </div>
+        </div>
 </div>
 
 
@@ -190,11 +216,18 @@ This is a invisible place for better viewing, please ignore
                     <h3>Example of Code</h3>
                   </div>
                   <div class="col-xs-3" style="float: right;">
-                    <h3>
-                      <a href="https://github.com/liangmanman/forbiddenIsland" type="button" class="btn btn-primary" target="_blank" >
-                      Source Code
-                      </a>
-                    </h3>
+                    <div class="buttonFlip-container" ontouchstart="this.classList.toggle('hover');">
+                    <div class="flipperButton">
+                        <div class="frontButton">
+                            <!-- front content -->
+                            <a class="mybutton button1" >Source Code</a>
+                        </div>
+                        <div class="backButton">
+                            <!-- back content -->
+                            <a class="mybutton button2" href="https://github.com/liangmanman/ForbiddenIsland" target="_blank">Source Code</a>
+                        </div>
+                    </div>
+                </div>
                   </div>
                 </div>
                 <div class="scroll">
